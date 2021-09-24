@@ -1,67 +1,78 @@
 html {
-  font-size: 14pt;
-  background-color: #a2ccbe;
+    font-size: 14pt;
+    background-color: #a2ccbe;
 }
 
 header {
-  text-align: center;
+    text-align: center;
 }
 
 .parent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 20px;
-}
-
-article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-}
-
-p {
-  width: 80%;
-}
-
-h3 {
-  text-align: top;
-}
-
-@media screen and (min-width: 768px) {
-  header {
-    text-align: center;
-  }
-
-  .parent {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    gap: 10px;
-    padding: 20px;
-  }
-
-  article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
-  }
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
 
-  section > article:first-child,
-  section > article:last-child {
-    width: 25%;
-  }
-
-  p {
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 80%;
-  }
+}
+img {
+    display: none;
+}
+p {
+    width: 80%;
+}
 
-  h3 {
+h3 {
     text-align: top;
-  }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    .parent {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+
+    section > article:first-child,
+    section > article:last-child {
+        width: 25%;
+    }
+
+    p {
+        width: 80%;
+    }
+
+    h3 {
+        text-align: top;
+    }
+
+    img {
+        width: 100%;
+        display: flex;
+    }
+
+    .noshow {
+        display: none;
+    }
 }

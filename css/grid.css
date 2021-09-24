@@ -8,17 +8,8 @@ header {
     display: grid;
     grid-template-rows: 40vh 80vh 80vh 40vh;
     grid-template-columns: 100px 1fr 1fr 100px;
-    row-gap: 10px;
+    row-gap: 5px;
 }
-
-/* section {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-end: 2;
-    grid-row-start: 1;
-    display: flex;
-    justify-content: center;
-} */
 
 .hela {
     grid-column-start: 1;
@@ -28,8 +19,7 @@ header {
 
 div {
     background-color: yellow;
-    display: flex;
-    flex-direction: row;
+    display: grid;
     justify-content: center;
     align-items: center;
     padding: 5px;
@@ -52,6 +42,8 @@ div {
         display: grid;
         grid-template-rows: 100px 200px 200px 100px;
         grid-template-columns: 100px 1fr 1fr 100px;
+        row-gap: 10px;
+        column-gap: 10px;
     }
 
     .one {
@@ -106,35 +98,42 @@ div {
         grid-column-end: 3;
     }
 
-    /* section {
-        display: grid;
-        row-gap: 10px;
-    }
-
-    .first {
-        grid-column-start: 1;
-        grid-column-end: 2;
+    .nine {
         grid-row-start: 1;
-        grid-row-end: 5;
-    }
-    .second {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 5;
-    }
-
-    .third {
+        grid-row-end: 2;
         grid-column-start: 3;
         grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 5;
     }
 
-    .fourth {
-        grid-column-start: 4;
-        grid-column-end: 5;
+    .ten {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    .eleven {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    .twelve {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    .hela {
         grid-row-start: 1;
         grid-row-end: 5;
-    } */
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+
+    .rotate {
+        transform: rotate(-270deg);
+    }
 }
